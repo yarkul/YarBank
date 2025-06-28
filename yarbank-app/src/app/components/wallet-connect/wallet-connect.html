@@ -1,0 +1,13 @@
+<div class="flex items-center gap-4">
+  @if (!web3.address) {
+  <div class="card flex justify-center">
+      <p-button label="Connect Wallet" (click)="connect()" />
+  </div>
+  }
+
+  @if (web3.address) {
+    <p class="text-green-500 font-mono">
+      {{ web3.getShortAddress() }}
+    </p>
+  }
+</div>
