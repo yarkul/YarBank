@@ -1,3 +1,16 @@
+@use 'fonts';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --dark-color: #000000;
+    --light-color: #FFFFFF;
+}
+
+body {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+}
